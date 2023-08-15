@@ -1,0 +1,8 @@
+<h1>Images#edit</h1>
+<%= form_with model: @image, local: true do |form| %>
+  <%= form.label :name %>
+  <%= form.text_field :name %>
+  <%= form.label :image %>
+  <%= form.file_field :image %>
+  <p><%= form.submit "Edit" %></p>
+<% end %>

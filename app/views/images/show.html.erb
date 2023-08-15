@@ -1,0 +1,7 @@
+<h1>Images#show</h1>
+<h2><%= @image.name %></h2>
+<div>
+  <%= image_tag @image_url %>
+</div>
+<p><%= link_to "編集", edit_image_path(@image) %></p>
+<p><%= link_to "戻る", images_path %></p>
